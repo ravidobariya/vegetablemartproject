@@ -1,7 +1,6 @@
 <?php
 
-$db = new PDO ( "mysql:host=localhost;dbname=swag", "root", "" );
-
+$db = new PDO ( "mysql:host=localhost;dbname=vegetablemart", "adminunkFGYh", "6gAqvZF7i1ak" );
 // check if last part of url is numeric
 $aUrls = explode('/', $_SERVER['REQUEST_URI']);
 $nId =  array_pop($aUrls);
