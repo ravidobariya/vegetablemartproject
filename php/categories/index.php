@@ -1,6 +1,6 @@
 <?php
 
-$db = new PDO ( "mysql:host=http://vegetablemart-cadfinal.rhcloud.com/phpmyadmin/import.php", "adminunkFGYh", "6gAqvZF7i1ak" );
+$db = new PDO ( "mysql:host=http://vegetablemart-cadfinal.rhcloud.com/phpmyadmin;dbname=vegetablemart","adminunkFGYh", "6gAqvZF7i1ak" );
 // check if last part of url is numeric
 $aUrls = explode('/', $_SERVER['REQUEST_URI']);
 $nId =  array_pop($aUrls);
