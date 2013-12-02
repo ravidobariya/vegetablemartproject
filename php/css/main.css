@@ -1,0 +1,81 @@
+html{
+	background: url('../images/FilterForgeWater.jpg');
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+	background: transparent;
+}
+
+.container{
+	background: #A8C3CF;
+	padding: 0;
+}
+#wrap {
+    height: auto;
+    margin: 0 auto -50px;
+    min-height: 100%;
+    padding: 0 0 50px;
+}
+#footer {
+    background-color: #F5F5F5;
+    height: 50px;
+}
+
+code {
+    font-size: 80%;
+}
+
+.navbar-brand {
+	font-family: 'Lobster Two', cursive;
+	font-size: 2em;
+}
+
+.navbar-collapse, .credit{
+	font-family: 'Poiret One', cursive;
+	font-size: 1.5em;
+}
+
+.credit{
+	padding-left: 15px;
+}
+
+#myCarousel1{
+	height: 560px;
+}
+
+.carousel-control{
+	width:auto;
+	top:33%;
+}
+
+.carousel-control.left{
+	padding-left: 1%;
+}
+
+.carousel-control.right{
+	padding-right: 1%;
+}
+
+#myCarousel1 img{
+	margin: auto;
+	max-height: 500px;
+}
+
+#myCarousel2 img{
+	padding: 4px;
+	width: 260px;
+}
+
+#myCarousel2 .carousel-inner{
+	padding: 0 1.5%;
+}
+
+#productPlaceHolder{
+	padding: 15px;
+	height: 150px;
+	overflow-y:scroll;
+}
