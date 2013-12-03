@@ -91,7 +91,7 @@ code {
 	overflow-y:scroll;
 }
 
-#description_page
+#about_page
 {
-	float:right;	
+	float:left;	
 }
