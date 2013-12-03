@@ -90,3 +90,8 @@ code {
 	height: 150px;
 	overflow-y:scroll;
 }
+
+#description_page
+{
+	float:right;	
+}
