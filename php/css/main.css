@@ -10,9 +10,6 @@ body{
 	background: transparent;
 }
 
-body.image_wrapper{
-	margin:auto;
-}
 
 p.imagetext{
 	text-align:center;
@@ -21,7 +18,7 @@ p.imagetext{
 
 
 #about_img{
-	margin-left:auto;
+	margin-left:100;
 	margin-right:auto;
 }
 .container{
