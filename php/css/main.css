@@ -10,6 +10,20 @@ body{
 	background: transparent;
 }
 
+body.image_wrapper{
+	margin:auto;
+}
+
+p.imagetext{
+	text-align:center;
+	color:green;
+}
+
+
+#about_img{
+	margin-left:auto;
+	margin-right:auto;
+}
 .container{
 	background: #A8C3CF;
 	padding: 0;
