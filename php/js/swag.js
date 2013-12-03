@@ -82,6 +82,7 @@ var SwagRouter = Backbone.Router.extend({
 		"(:category)(/:productid)" : "showProduct",
 	},
 	showProduct : function(nCategoryId, nProductId) {
+		$("#about_page").load("../html/about_images.html").hide();
 		jQuery("#product").show();
 		jQuery("#contact").hide();
 		jQuery("#about").hide();
@@ -113,6 +114,7 @@ var SwagRouter = Backbone.Router.extend({
 		$("#about_page").load("../html/about_images.html").show();
 	},
 	showContact: function(){
+		$("#about_page").load("../html/about_images.html").hide();
 		jQuery("#product").hide();
 		jQuery("#contact").show();
 		jQuery("#about").hide();
