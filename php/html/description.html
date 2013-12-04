@@ -8,12 +8,7 @@
 <script src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$(".slideshow").cycle({
-			fx:'fade',
-			pause:1,
-			prev:'#previous',
-			next:'#nextimg'
-		});
+		$("#slideshow").cycle();
 	});
 </script>
 </head>
@@ -37,9 +32,5 @@
 	<img src="../images/beanSlide2.jpg" alt="image7" height="200" width="200" />
 	<img src="../images/beanSlide3.jpg" alt="image8" height="200" width="200" />
 </div> 			  
-<ul id="nav">
-	<li id="previous"><a href="#">Previous</a></li>
-	<li id="nextimg"><a href="#">Next</a></li>
-	</ul>
 </body>
 </html>
