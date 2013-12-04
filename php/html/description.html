@@ -8,8 +8,13 @@
 <script src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$("#slideshow").cycle()
-	})
+		$(".slideshow").cycle({
+			fx:'fade',
+			pause:1,
+			prev:'#prev',
+			next:'#next'
+		});
+	});
 </script>
 </head>
 <body>
@@ -22,7 +27,7 @@
 	 <p id="bean_description">The term bean originally referred to the seed of the broad or fava bean, <br>but was later expanded to include 
 	 						  members of the New World genus Phaseolus,<br> such as the common bean and the runner bean, and the related genus 
 	 						  Vigna.</p>	
-<div id="slideshow">
+<div class="slideshow">
 	<img src="../images/appleSlide1.jpg" alt="image1" height="200" width="200" />
 	<img src="../images/strawberrySlide2.jpg" alt="image2" height="200" width="200" />
 	<img src="../images/mangoSlide3.jpg" alt="image3" height="200" width="200" />
@@ -32,5 +37,9 @@
 	<img src="../images/beanSlide2.jpg" alt="image7" height="200" width="200" />
 	<img src="../images/beanSlide3.jpg" alt="image8" height="200" width="200" />
 </div> 			  
+<ul id="nav">
+	<li id="prev"><a href="#">Previous</a></li>
+	<li id="next"><a href="#">Next</a></li>
+	</ul>
 </body>
 </html>
