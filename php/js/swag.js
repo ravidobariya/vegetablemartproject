@@ -84,6 +84,7 @@ var SwagRouter = Backbone.Router.extend({
 	showProduct : function(nCategoryId, nProductId) {
 		$("#about_page").load("../html/about_images.html").hide();
 		$("#description_page").load("../html/description.html").hide();
+		$("#about").load("../html/various_images.html").hide();
 		jQuery("#product").show();
 		jQuery("#contact").hide();
 		jQuery("#about").hide();
@@ -112,12 +113,14 @@ var SwagRouter = Backbone.Router.extend({
 		jQuery("#contact").hide();
 		jQuery("#about").show();
 		jQuery("#home").hide();
-		$("#about_page").load("../html/about_images.html").show()
+		$("#about").load("../html/various_images.html").show();
+		$("#about_page").load("../html/about_images.html").show();
 		$("#description_page").load("../html/description.html").show();
 	},
 	showContact: function(){
 		$("#about_page").load("../html/about_images.html").hide();
 		$("#description_page").load("../html/description.html").hide();
+		$("#about").load("../html/various_images.html").hide();
 		jQuery("#product").hide();
 		jQuery("#contact").show();
 		jQuery("#about").hide();
