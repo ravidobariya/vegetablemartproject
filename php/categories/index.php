@@ -3,7 +3,31 @@
 $db = new PDO ( "mysql:host=127.8.66.130;dbname=vegetablemart;port=3306","adminunkFGYh", "6gAqvZF7i1ak" );
 // check if last part of url is numeric
 $aUrls = explode('/', $_SERVER['REQUEST_URI']);
-$nId =  array_pop($aUrls);
+
+$nId = "";
+$sTable = "";
+$nExtra =  array_pop($aUrls);
+if($nExtra == "")
+{
+	$first = array_pop($aUrls);
+	if(is_numeric($first))
+	{
+		$nId = $first;
+		$sTable = array_pop($aUrls);
+	}
+	else
+	{
+		$sTable = $first;
+	}
+}else if(is_numeric($nExtra))
+{
+	$nId = $nExtra;
+	$sTable = array_pop($aUrls);
+}
+else
+{
+	$sTable = $nExtra;
+}
 
 $sTable = array_pop($aUrls);
 $sSQL = "SELECT * FROM ";
