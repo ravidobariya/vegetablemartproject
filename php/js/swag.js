@@ -66,8 +66,8 @@ var SwagRouter = Backbone.Router.extend({
 		this.oItemList.models.forEach(function(oItem) {
 			if(!(i % 4)){
 				// then we need to render an item div
-				if(curDiv) jQuery("#myCarousel2PlaceHolder").append(curDiv);
 				curDiv = jQuery("<div class=\"item\"></div>");
+				jQuery("#myCarousel2PlaceHolder").append(curDiv);
 				if(i==0){
 					curDiv.addClass("active");
 				}
