@@ -8,11 +8,7 @@
 <script src="http://malsup.github.com/jquery.cycle.all.js"></script> 
 <script type="text/javascript">
 	$(document).ready(function(){
-		$("#slides").cycle({
-			fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle
-            easing: 'easeOutBack', 
-            speed: 500,
-            timeout:300
+		$("#slides").cycle("fade");
 		});
 	});
 </script>
