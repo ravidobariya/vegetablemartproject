@@ -6,40 +6,29 @@ $aUrls = explode('/', $_SERVER['REQUEST_URI']);
 
 $nId = "";
 $sTable = "";
-$nExtra =  array_pop($aUrls);
-
-print_r($aUrls);
 
 if($nExtra == "")
 {
-	echo "A";
 	$first = array_pop($aUrls);
 	if(is_numeric($first))
 	{
-		echo "A1";
-		echo $nId = $first;
-		echo $sTable = array_pop($aUrls);
+		$nId = $first;
+		$sTable = array_pop($aUrls);
 	}
 	else
 	{
-		echo "A2";
-		echo $sTable = $first;
+		$sTable = $first;
 	}
 }else if(is_numeric($nExtra))
 {
-	echo "B";
-	echo $nId = $nExtra;
-	echo $sTable = array_pop($aUrls);
+	$nId = $nExtra;
+	$sTable = array_pop($aUrls);
 }
 else
 {
-	echo "C";
-	echo $sTable = $nExtra;
+	$sTable = $nExtra;
 }
-echo "id : ".$nId;
-echo "table: ".$nTable;
 
-//$sTable = array_pop($aUrls);
 $sSQL = "SELECT * FROM ";
 $sWhere = "";
 $aBinds = array();
