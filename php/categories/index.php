@@ -6,6 +6,7 @@ $aUrls = explode('/', $_SERVER['REQUEST_URI']);
 
 $nId = "";
 $sTable = "";
+print_r($aUrls);
 $nExtra =  array_pop($aUrls);
 if($nExtra == "")
 {
