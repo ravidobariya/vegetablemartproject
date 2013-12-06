@@ -7,7 +7,8 @@ $aUrls = explode('/', $_SERVER['REQUEST_URI']);
 $nId = "";
 $sTable = "";
 $nExtra =  array_pop($aUrls);
-print_r($nUrls);
+
+print_r($aUrls);
 
 if($nExtra == "")
 {
