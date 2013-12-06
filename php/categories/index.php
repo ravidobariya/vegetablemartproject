@@ -6,12 +6,10 @@ $aUrls = explode('/', $_SERVER['REQUEST_URI']);
 
 $nId = "";
 $sTable = "";
-print_r($aUrls);
 $nExtra =  array_pop($aUrls);
 
 if($nExtra == "")
 {
-	echo "i am in";
 	$first = array_pop($aUrls);
 	if(is_numeric($first))
 	{
@@ -32,8 +30,7 @@ else
 	$sTable = $nExtra;
 }
 
-
-$sTable = array_pop($aUrls);
+//$sTable = array_pop($aUrls);
 $sSQL = "SELECT * FROM ";
 $sWhere = "";
 $aBinds = array();
