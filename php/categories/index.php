@@ -6,6 +6,7 @@ $aUrls = explode('/', $_SERVER['REQUEST_URI']);
 
 $nId = "";
 $sTable = "";
+$nExtra =  array_pop($aUrls);
 
 if($nExtra == "")
 {
@@ -29,6 +30,7 @@ else
 	$sTable = $nExtra;
 }
 
+//$sTable = array_pop($aUrls);
 $sSQL = "SELECT * FROM ";
 $sWhere = "";
 $aBinds = array();
