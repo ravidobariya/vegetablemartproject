@@ -8,10 +8,11 @@ $nId = "";
 $sTable = "";
 print_r($aUrls);
 $nExtra =  array_pop($aUrls);
+//$nId = $nExtra;
 
 if($nExtra == "")
 {
-	echo "i am in";
+	echo "i am in A";
 	$first = array_pop($aUrls);
 	if(is_numeric($first))
 	{
@@ -24,16 +25,18 @@ if($nExtra == "")
 	}
 }else if(is_numeric($nExtra))
 {
+	echo "i am in B";
 	$nId = $nExtra;
 	$sTable = array_pop($aUrls);
 }
 else
 {
+	echo "i am in C";
 	$sTable = $nExtra;
 }
 
 
-$sTable = array_pop($aUrls);
+//$sTable = array_pop($aUrls);
 $sSQL = "SELECT * FROM ";
 $sWhere = "";
 $aBinds = array();
