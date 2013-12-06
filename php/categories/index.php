@@ -30,7 +30,8 @@ else
 {
 	$sTable = $nExtra;
 }
-
+echo "id : ".$nId;
+echo "table: ".$nTable;
 
 //$sTable = array_pop($aUrls);
 $sSQL = "SELECT * FROM ";
