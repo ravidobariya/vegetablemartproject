@@ -12,24 +12,29 @@ print_r($aUrls);
 
 if($nExtra == "")
 {
+	echo "A";
 	$first = array_pop($aUrls);
 	if(is_numeric($first))
 	{
-		$nId = $first;
-		$sTable = array_pop($aUrls);
+		echo "A1";
+		echo $nId = $first;
+		echo $sTable = array_pop($aUrls);
 	}
 	else
 	{
-		$sTable = $first;
+		echo "A2";
+		echo $sTable = $first;
 	}
 }else if(is_numeric($nExtra))
 {
-	$nId = $nExtra;
-	$sTable = array_pop($aUrls);
+	echo "B";
+	echo $nId = $nExtra;
+	echo $sTable = array_pop($aUrls);
 }
 else
 {
-	$sTable = $nExtra;
+	echo "C";
+	echo $sTable = $nExtra;
 }
 echo "id : ".$nId;
 echo "table: ".$nTable;
