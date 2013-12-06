@@ -11,6 +11,7 @@ $nExtra =  array_pop($aUrls);
 
 if($nExtra == "")
 {
+	echo "i am in";
 	$first = array_pop($aUrls);
 	if(is_numeric($first))
 	{
