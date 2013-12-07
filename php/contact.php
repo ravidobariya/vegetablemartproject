@@ -1,6 +1,8 @@
 <?php
 
 $db = new PDO ( "mysql:host=127.8.66.130;dbname=vegetablemart;port=3306","adminunkFGYh", "6gAqvZF7i1ak" );
+if($db)
+	echo "connected";
 echo $fname = $_POST('fname');
 echo $lname = $_POST('lname');
 echo $email = $_POST('email');
