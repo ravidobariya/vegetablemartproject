@@ -93,6 +93,14 @@ code {
 	overflow-y:scroll;
 }
 
+#contactform{
+	text-align : center;
+}
+label{
+	width : 4em;
+	float : left;
+}
+
 #description_page
 {
 	float:right;	
