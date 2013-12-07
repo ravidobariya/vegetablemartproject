@@ -4,6 +4,7 @@ $db = new PDO ( "mysql:host=127.8.66.130;dbname=vegetablemart;port=3306","adminu
 if($db)
 	echo "connected";
 echo count($_POST);
+print_r($_POST);
 echo $fname = $_POST('fname');
 echo $lname = $_POST('lname');
 echo $email = $_POST('email');
