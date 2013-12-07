@@ -5,13 +5,13 @@ if($db)
 	echo "connected";
 echo count($_POST);
 print_r($_POST);
-$fname = $_POST("fname");
+$fname = $_POST['fname'];
 echo $fname;
-$lname = $_POST('lname');
+$lname = $_POST['lname'];
 echo $lname;
-$email = $_POST('email');
+$email = $_POST['email'];
 echo $email;
-$detail = $_POST('comments');
+$detail = $_POST['comments'];
 echo $detail;
 
 $stmt = $db->prepare("INSERT INTO Inquiry (firstName,lastName,email,comments) VALUES ($fname,$lname,$email,$detail)");
