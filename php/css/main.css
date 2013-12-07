@@ -98,7 +98,6 @@ code {
 }
 label{
 	width : 1em;
-	float : left;
 	text-align : right;
 }
 /*#data input{
