@@ -85,7 +85,7 @@ code {
 	padding: 0 1.5%;
 }
 #contact{
-	margin-left : 100px;
+	text-align : centre;
 }
 #productPlaceHolder{
 	padding: 15px;
@@ -99,6 +99,10 @@ code {
 label{
 	width : 4em;
 	float : left;
+}
+
+table{
+	margin-left  : 100px;
 }
 
 #description_page
