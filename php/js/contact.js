@@ -13,7 +13,9 @@ jQuery("document").ready(function(){
 			},
 			type : "post"
 			})
+			alert("hi");
 			.done(function(data){
+			alert("I am in done");
 			$("#message").html(data);
 			});
 			return(false);
