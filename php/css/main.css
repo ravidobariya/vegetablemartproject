@@ -97,10 +97,21 @@ code {
 	text-align : center;
 }
 label{
-	width : 4em;
+	width : 5em;
 	float : left;
+	text-align : right;
+}
+#data input{
+	margin-left: 1em;
+	margin-bottom: .5em;
+}
+#buttons{
+	padding-top :.5em;
 }
 
+tr{
+	
+}
 table{
 	margin-left  : 100px;
 }
