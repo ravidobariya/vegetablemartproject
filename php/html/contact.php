@@ -35,6 +35,7 @@ Please mention your suggestions or complaints here. We will contact you soon.
 <?php
 
 $db = new PDO ( "mysql:host=127.8.66.130;dbname=vegetablemart;port=3306","adminunkFGYh", "6gAqvZF7i1ak" );
+echo count($_POST);
 if(count($_POST) == 5)
 {
 $fname = $_POST['fname'];
