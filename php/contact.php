@@ -14,8 +14,8 @@ echo $email;
 $detail = $_POST['comments'];
 echo $detail;
 
-$stmt = $db->prepare("INSERT INTO Inquiry (firstName,lastName,email,comments) VALUES ($fname,$lname,$email,$detail)");
-$stmt->execute();
+$stmt = $db->prepare("INSERT INTO inquiry (firstName,lastName,email,comments) VALUES ($fname,$lname,$email,$detail)");
+$stmt->execute(array());
 $count = $stmt->rowCount();
 echo "inserted rows".$count;
 
