@@ -84,7 +84,9 @@ code {
 #myCarousel2 .carousel-inner{
 	padding: 0 1.5%;
 }
-
+#contact{
+	margin-left : 100px;
+}
 #productPlaceHolder{
 	padding: 15px;
 	height: 150px;
@@ -94,14 +96,4 @@ code {
 #description_page
 {
 	float:right;	
-}
-
-label{
-	float : left;
-	width : 6em;
-	padding-left : 50px;
-}
-
-.textbox{
-	width : 50px;
 }
