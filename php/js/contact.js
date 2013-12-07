@@ -1,13 +1,11 @@
 jQuery("document").ready(function(){
-	var validate = true;
+/*	var validate = true;
 	if(isNaN($(#fname).value()) || isNaN($(#lname).value()) || isNaN($(#email).value()) || isNaN($(#comments).value()))
 	{
 		validate = false;
-	}
+	}*/
 	$("#contact").submit(function(){
-		if(validate)
-		{
-			$.ajax({url:"contact.php",data : {
+			$.ajax({url:"../contact.php",data : {
 			fname:$("#fname").val(),
 			lname:$("#lname").val(),
 			email:$("#email").val(),
