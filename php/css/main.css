@@ -55,7 +55,7 @@ code {
 }
 
 #myCarousel1{
-	height: 560px;
+	height: 400px;
 }
 
 .carousel-control{
@@ -94,4 +94,14 @@ code {
 #description_page
 {
 	float:right;	
+}
+
+label{
+	float : left;
+	width : 6em;
+	padding-left : 50px;
+}
+
+.textbox{
+	width : 50px;
 }
