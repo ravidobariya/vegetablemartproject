@@ -45,6 +45,18 @@
 
 		<!-- Begin page content -->
 		<div id="product" class="container">
+			
+			<div id="productPlaceHolder" class="product-caption">
+				<script id="productTemplate" type="text/template">
+				<h1><%= name %></h1>
+				<div class="row">
+				<div class="col-md-8"><p class="lead"><%= description %></p></div>
+				<% if(paypal_url !== ""){ %>
+				<div class="col-md-4">Price : <%=price%>$/lb <a class="btn btn-primary" href="<%= paypal_url %>">Buy Now</a></div>
+				<% } %>
+				</div>
+			</script>
+			</div>
 			<div data-ride="carousel" class="carousel slide" id="myCarousel1">
 				<!-- Indicators -->
 				<ol id="indicatorPlaceHolder" class="carousel-indicators">
@@ -63,17 +75,6 @@
 					class="left carousel-control"><i class="fa fa-arrow-left"></i></a>
 				<a data-slide="next" href="#myCarousel1"
 					class="right carousel-control"><i class="fa fa-arrow-right"></i></a>
-			</div>
-			<div id="productPlaceHolder" class="product-caption">
-				<script id="productTemplate" type="text/template">
-				<h1><%= name %></h1>
-				<div class="row">
-				<div class="col-md-8"><p class="lead"><%= description %></p></div>
-				<% if(paypal_url !== ""){ %>
-				<div class="col-md-4">Price : <%=price%>$/lb <a class="btn btn-primary" href="<%= paypal_url %>">Buy Now</a></div>
-				<% } %>
-				</div>
-			</script>
 			</div>
 			<div data-ride="carousel" class="carousel slide" id="myCarousel2">
 				<div id="myCarousel2PlaceHolder" class="carousel-inner">
