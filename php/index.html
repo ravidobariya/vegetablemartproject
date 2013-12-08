@@ -45,7 +45,25 @@
 
 		<!-- Begin page content -->
 		<div id="product" class="container">
-			
+			<div data-ride="carousel" class="carousel slide" id="myCarousel1">
+				<!-- Indicators -->
+				<ol id="indicatorPlaceHolder" class="carousel-indicators">
+					<script id="indicatorTemplate" type="text/template">
+					<li class="<%= activeClass %>" data-slide-to="<%= nImage %>" data-target="#myCarousel1"></li>
+				</script>
+				</ol>
+				<div id="myCarousel1PlaceHolder" class="carousel-inner">
+					<script id="myCarousel1Template" type="text/template">
+					<div class="item <%= activeClass %>" style="top:70px;">
+						<img alt="<%= title %>" src="images/<%= url %>" title="<%= title %>" />
+					</div>
+				</script>
+				</div>
+				<a data-slide="prev" href="#myCarousel1"
+					class="left carousel-control"><i class="fa fa-arrow-left"></i></a>
+				<a data-slide="next" href="#myCarousel1"
+					class="right carousel-control"><i class="fa fa-arrow-right"></i></a>
+			</div>
 			<div id="productPlaceHolder" class="product-caption">
 				<script id="productTemplate" type="text/template">
 				<h1><%= name %></h1>
@@ -56,25 +74,6 @@
 				<% } %>
 				</div>
 			</script>
-			</div>
-			<div data-ride="carousel" class="carousel slide" id="myCarousel1">
-				<!-- Indicators -->
-				<ol id="indicatorPlaceHolder" class="carousel-indicators">
-					<script id="indicatorTemplate" type="text/template">
-					<li class="<%= activeClass %>" data-slide-to="<%= nImage %>" data-target="#myCarousel1"></li>
-				</script>
-				</ol>
-				<div id="myCarousel1PlaceHolder" class="carousel-inner">
-					<script id="myCarousel1Template" type="text/template">
-					<div class="item <%= activeClass %>" style="top:131px;">
-						<img alt="<%= title %>" src="images/<%= url %>" title="<%= title %>" />
-					</div>
-				</script>
-				</div>
-				<a data-slide="prev" href="#myCarousel1"
-					class="left carousel-control"><i class="fa fa-arrow-left"></i></a>
-				<a data-slide="next" href="#myCarousel1"
-					class="right carousel-control"><i class="fa fa-arrow-right"></i></a>
 			</div>
 			<div data-ride="carousel" class="carousel slide" id="myCarousel2">
 				<div id="myCarousel2PlaceHolder" class="carousel-inner">
