@@ -46,12 +46,7 @@
 		<!-- Begin page content -->
 		<div id="product" class="container" style="height :830px;">
 			<div data-ride="carousel" class="carousel slide" id="myCarousel1">
-				<!-- Indicators -->
-				<ol id="indicatorPlaceHolder" class="carousel-indicators">
-					<script id="indicatorTemplate" type="text/template">
-					<li class="<%= activeClass %>" data-slide-to="<%= nImage %>" data-target="#myCarousel1"></li>
-				</script>
-				</ol>
+				<!-- Indicators -->				
 				<div id="myCarousel1PlaceHolder" class="carousel-inner">
 					<script id="myCarousel1Template" type="text/template">
 					<div class="item <%= activeClass %>" style="top:70px;">
@@ -59,6 +54,11 @@
 					</div>
 				</script>
 				</div>
+				<ol id="indicatorPlaceHolder" class="carousel-indicators">
+					<script id="indicatorTemplate" type="text/template">
+					<li class="<%= activeClass %>" data-slide-to="<%= nImage %>" data-target="#myCarousel1"></li>
+				</script>
+				</ol>
 				<a data-slide="prev" href="#myCarousel1"
 					class="left carousel-control"><i class="fa fa-arrow-left"></i></a>
 				<a data-slide="next" href="#myCarousel1"
@@ -70,7 +70,7 @@
 				<div class="row">
 				<div class="col-md-8"><p class="lead"><%= description %></p></div>
 				<% if(paypal_url !== ""){ %>
-				<div class="col-md-4">Price : <%=price%>$/lb <a class="btn btn-primary" href="<%= paypal_url %>">Buy Now</a></div>
+				<div class="col-md-3">Price : <%=price%>$/lb + delivery charges <a class="btn btn-primary" href="<%= paypal_url %>">Buy Now</a></div>
 				<% } %>
 				</div>
 			</script>
