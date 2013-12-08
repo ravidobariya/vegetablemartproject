@@ -5310,7 +5310,7 @@ body.modal-open,
   height: 10px;
   margin: 1px;
   text-indent: -999px;
-  border: 1px solid #AEB3AF;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -5318,7 +5318,7 @@ body.modal-open,
   margin: 0;
   width: 12px;
   height: 12px;
-  background-color: #A29797;
+  background-color: #ffffff;
 }
 .carousel-caption {
   position: absolute;
