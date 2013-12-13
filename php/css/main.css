@@ -46,8 +46,7 @@ code {
 }
 
 .navbar-collapse, .credit{
-	font-family: 'Montserrat Subrayada';
-	/*,'Poiret One', cursive;*/
+	font-family: 'Poiret One', cursive;
 	font-size: 1.5em;
 }
 
