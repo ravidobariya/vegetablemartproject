@@ -119,7 +119,7 @@ var SwagRouter = Backbone.Router.extend({
 		$("#description_page").load("../html/description.html").show();
 		$("#contact_page").load("../html/contact.html").hide();
 	}
-	/*showContact: function(){
+	showContact: function(){
 		$("#about_page").load("../html/about_images.html").hide();
 		$("#description_page").load("../html/description.html").hide();
 		$("#contact_page").load("../html/contact.html").show();
@@ -128,7 +128,7 @@ var SwagRouter = Backbone.Router.extend({
 		jQuery("#about").hide();
 		jQuery("#home").hide();
 		jQuery("#submit").hide();
-	}*/	
+	}	
 });
 
 window.onerror = function(message, file, lineNumber) {
