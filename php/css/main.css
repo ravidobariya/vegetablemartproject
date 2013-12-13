@@ -99,6 +99,10 @@ code {
 	text-align:centre;	
 }
 
+.right{
+	text-aligh: right;
+}
+
 #contactform{
 	text-align : center;
 }
