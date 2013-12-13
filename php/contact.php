@@ -10,7 +10,7 @@ $stmt->execute(array($fname,$lname,$email,$detail));
 $count = $stmt->rowCount();
 if($count == 1)
 {
-	echo "Thank you ".$fname." ".$lname."for your information, We will contact you soon";
+	echo "Thank you ".$fname." ".$lname." for your information, We will contact you soon";
 }
 
 //header("Location:http://vegetablemart-cadfinal.rhcloud.com/#contact");
