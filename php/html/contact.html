@@ -48,7 +48,7 @@ $(document).ready(function(){
 		email : $('email').val(),
 		comments : $('comments').val()
 		}
-		$.get('contact.php',data,function response(data,status){
+		$.get('../contact.php',data,function response(data,status){
 			if(data=='success')
 				$('#message').html("Request Processed Successfully, we will contact you soon.");
 			else
