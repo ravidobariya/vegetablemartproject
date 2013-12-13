@@ -39,20 +39,25 @@ Please mention your suggestions or complaints here. We will contact you soon.
 </body>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <!--  <script src="../js/contact.js"></script>-->
-<script></script>
+<script>
+$(document).ready(function(){
+	jQuery("#contact").submit(function(){
+		var data = {
+		fname : $('fname').val(),
+		lname : $('lname').val(),
+		email : $('email').val(),
+		comments : $('comments').val()
+		}
+		$.get('contact.php',data,function response(data,status){
+			if(data=='success')
+				$('#message').html("Request Processed Successfully, we will contact you soon.");
+			else
+				$('#message').html("Sorry we can not process your request now, Please try again letter.");
+		});
+		return false;
+		)};
+});
 </script>
 </html>
 
-<?php
 
-$db = new PDO ( "mysql:host=127.8.66.130;dbname=vegetablemart;port=3306","adminunkFGYh", "6gAqvZF7i1ak" );
-print_r($_POST);
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
-$email = $_POST['email'];
-$detail = $_POST['comments'];
-$stmt = $db->prepare("INSERT INTO inquiry (firstName,lastName,email,comments) VALUES(?,?,?,?)");
-$stmt->execute(array($fname,$lname,$email,$detail));
-$count = $stmt->rowCount();
-
-?>
