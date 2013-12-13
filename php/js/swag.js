@@ -130,7 +130,7 @@ var SwagRouter = Backbone.Router.extend({
 		jQuery("#home").hide();
 		jQuery("#submit").hide();
 	},
-	showContact: function(){
+	showSubmit: function(){
 		$("#about_page").load("../html/about_images.html").hide();
 		$("#description_page").load("../html/description.html").hide();
 		$("#contact_page").load("../html/contact.html").show();
