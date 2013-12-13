@@ -95,6 +95,10 @@ code {
 	overflow-y:scroll;
 }
 
+#submit{
+	text-align:centre;	
+}
+
 #contactform{
 	text-align : center;
 }
