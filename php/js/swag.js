@@ -82,14 +82,10 @@ var SwagRouter = Backbone.Router.extend({
 		"(:category)(/:productid)" : "showProduct",
 	},
 	showProduct : function(nCategoryId, nProductId) {
-		$("#about_page").load("../html/about_images.html").hide();
-		$("#description_page").load("../html/description.html").hide();
-		$("#contact_page").load("../html/contact.html").hide();
 		jQuery("#product").show();
 		jQuery("#contact").hide();
 		jQuery("#about").hide();
 		jQuery("#home").hide();
-		jQuery("#submit").hide();
 		if(nCategoryId == null){
 			nCategoryId = this.oCategoryList.at(0).id;
 		}else if(isNaN(parseInt(nCategoryId))){
@@ -114,21 +110,13 @@ var SwagRouter = Backbone.Router.extend({
 		jQuery("#contact").hide();
 		jQuery("#about").show();
 		jQuery("#home").hide();
-		jQuery("#submit").hide();
-		$("#about_page").load("../html/about_images.html").show();
-		$("#description_page").load("../html/description.html").show();
-		$("#contact_page").load("../html/contact.html").hide();
-	}
+	},
 	showContact: function(){
-		$("#about_page").load("../html/about_images.html").hide();
-		$("#description_page").load("../html/description.html").hide();
-		$("#contact_page").load("../html/contact.html").show();
-		jQuery("#product").hide();
+		jQuery("#product").hide();		
 		jQuery("#contact").show();
 		jQuery("#about").hide();
 		jQuery("#home").hide();
-		jQuery("#submit").hide();
-	}	
+	}
 });
 
 window.onerror = function(message, file, lineNumber) {
