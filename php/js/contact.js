@@ -1,28 +1,20 @@
-jQuery("document").ready(function(){
-/*	var validate = true;
-	if(isNaN($(#fname).value()) || isNaN($(#lname).value()) || isNaN($(#email).value()) || isNaN($(#comments).value()))
-	{
-		validate = false;
-	}*/
-	$("#contact").submit(function(){
-			$.ajax({url:"../contact.php",data : {
-			fname:$("#fname").val(),
-			lname:$("#lname").val(),
-			email:$("#email").val(),
-			comments:$("#comments").val()
-			},
-			type : "post"
-			})
-			alert("hi");
-			.done(function(data){
-			alert("I am in done");
-			$("#message").html(data);
-			});
-			return(false);
+$(document).ready(function(){
+	jQuery("#contact").submit(function(){
+		alert("submit Preseed");
+		var data = {
+		fname : $('fname').val(),
+		lname : $('lname').val(),
+		email : $('email').val(),
+		comments : $('comments').val()
 		}
-		else
-		{
-			$("#message").html("Please Enter Valid input");
-		}
-	});	
+		alert("hello");
+		$.get('../contact.php',data,function response(data,status){
+			$('#message').html("entered");
+			if(data=='success')
+				$('#message').html("Request Processed Successfully, we will contact you soon.");
+			else
+				$('#message').html("Sorry we can not process your request now, Please try again letter.");
+		});
+		return false;
+		)};
 });
