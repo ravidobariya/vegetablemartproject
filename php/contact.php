@@ -9,6 +9,7 @@ $detail = $_POST['comments'];
 $stmt = $db->prepare("INSERT INTO inquiry (firstName,lastName,email,comments) VALUES(?,?,?,?)");
 $stmt->execute(array($fname,$lname,$email,$detail));
 $count = $stmt->rowCount();
+header("Location:http://")
 if($count == 1)
 {
 	echo "Thanks for your information. We will contact you soon.";
