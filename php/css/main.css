@@ -41,13 +41,15 @@ code {
 }
 
 .navbar-brand {
-	font-family: 'Lobster Two', cursive;
+	font-family: 'Rye', cursive;
 	font-size: 2em;
+	font-weight : 400;
 }
 
 .navbar-collapse, .credit{
-	font-family: 'Poiret One', cursive;
+	font-family: 'Ribeye Marrow', cursive;;
 	font-size: 1.5em;
+	font-weight: 400;
 }
 
 .credit{
