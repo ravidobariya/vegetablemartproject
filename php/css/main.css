@@ -55,7 +55,7 @@ code {
 }
 
 #myCarousel1{
-	height: 400px;
+	height: 560px;
 }
 
 .carousel-control{
@@ -102,13 +102,6 @@ label{
 }
 #buttons{
 	padding-top :.5em;
-}
-
-tr{
-	
-}
-table{
-	margin-left  : 100px;
 }
 
 #description_page
