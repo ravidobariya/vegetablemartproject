@@ -10,7 +10,7 @@
 <img src="../images/contactimg.jpg" height="300" width="600" />
 <h2><i>Contact Us</i></h2>
 <p><h4>We are available for your service day and night to provide you with the best assistance</h4></p>
-<form id="contact" action="contact.php" method="POST">
+<form id="contact" action="" method="POST">
 <div id="data">
 <label for="firstname">First Name:</label>
 <input type="text" name="fname" id="fname" /><br />
@@ -36,6 +36,7 @@ Please mention your suggestions or complaints here. We will contact you soon.
 
 $db = new PDO ( "mysql:host=127.8.66.130;dbname=vegetablemart;port=3306","adminunkFGYh", "6gAqvZF7i1ak" );
 echo count($_POST);
+echo "hello";
 if(count($_POST) == 5)
 {
 $fname = $_POST['fname'];
