@@ -79,7 +79,6 @@ var SwagRouter = Backbone.Router.extend({
 	routes : {
 		"about" : "showAbout",
 		"contact": "showContact",
-		"submit" : "showSubmit"
 		"(:category)(/:productid)" : "showProduct",
 	},
 	showProduct : function(nCategoryId, nProductId) {
