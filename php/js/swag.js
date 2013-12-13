@@ -89,6 +89,7 @@ var SwagRouter = Backbone.Router.extend({
 		jQuery("#contact").hide();
 		jQuery("#about").hide();
 		jQuery("#home").hide();
+		jQuery("#submit").hide();
 		if(nCategoryId == null){
 			nCategoryId = this.oCategoryList.at(0).id;
 		}else if(isNaN(parseInt(nCategoryId))){
@@ -113,6 +114,7 @@ var SwagRouter = Backbone.Router.extend({
 		jQuery("#contact").hide();
 		jQuery("#about").show();
 		jQuery("#home").hide();
+		jQuery("#submit").hide();
 		$("#about_page").load("../html/about_images.html").show();
 		$("#description_page").load("../html/description.html").show();
 		$("#contact_page").load("../html/contact.html").hide();
@@ -125,6 +127,7 @@ var SwagRouter = Backbone.Router.extend({
 		jQuery("#contact").show();
 		jQuery("#about").hide();
 		jQuery("#home").hide();
+		jQuery("#submit").hide();
 	}
 });
 
